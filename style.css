@@ -18,7 +18,8 @@ body {
 .container {
     background: #ffffff;
     padding: 25px;
-    width: 550px;
+    max-width: 550px;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -165,5 +166,28 @@ li.deleted-item {
 
     100% {
         opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .todo-body input {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+
+    #clearAllBtn {
+        padding: 8px;
+        font-size: 14px;
     }
 }
